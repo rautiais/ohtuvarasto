@@ -48,12 +48,10 @@ class TestVarasto(unittest.TestCase):
 
     def test_ei_nega_tilavuus(self):
         self.varasto = Varasto(-10)
-
         self.assertAlmostEqual(self.varasto.tilavuus, 0)
 
     def test_lisaa_nega_maaran(self):
         self.varasto.lisaa_varastoon(-10)
-
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_ei_voi_ottaa_nega_maara(self):
